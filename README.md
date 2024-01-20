@@ -1,10 +1,10 @@
-#Google Analytics API PHP
+*Google Analytics API PHP
 
-Simple class to set up Oauth 2.0 with Google and query the Google Analytics API v3 with PHP. Curl is required!
+Simple class to set up Oauth 2.0 with Google and query the Google Analytics API v3 with PHP. Curl is required 
 The class supports getting the access tokens for *web applications* and *service accounts* registered in the Google APIs console.   
 See the documentation for further informations: https://developers.google.com/accounts/docs/OAuth2
 
-##1. Basic Setup
+!#1. Basic Setup
 
 * Create a Project in the Google APIs Console: https://code.google.com/apis/console/
 * Enable the Analytics API under Services
@@ -165,3 +165,4 @@ https://developers.google.com/analytics/devguides/reporting/core/dimsmets
 
 ###Google Analytics Query Explorer for testing queries and results:
 http://ga-dev-tools.appspot.com/explorer/
+ 
