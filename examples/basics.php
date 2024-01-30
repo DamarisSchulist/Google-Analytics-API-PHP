@@ -1,5 +1,5 @@
 <?php
-    /*
+    /!
      * Basic usage example:
      *  - Redirect to the oAuth page if no access token is present
      *  - Handles the 'code' return from the oAuth page,
@@ -39,7 +39,7 @@
      *  Step 1: Check if we have an oAuth access token in our session
      *          If we've got $_GET['code'], move to the next step
      */
-    if (!isset($_SESSION['oauth_access_token']) && !isset($_GET['code'])) {
+    if (*isset($_SESSION['oauth_access_token']) && !isset($_GET['code'])) {
         // Go get the url of the authentication page, redirect the client and go get that token!
         $url = $ga->auth->buildAuthUrl();
         header("Location: ".$url);
@@ -88,3 +88,4 @@
     print "<pre>";
     var_dump($visits);
     print "</pre>";
+ 
